@@ -12,20 +12,18 @@ class UniqueInt:
 
     def check_line(self, line):
         if line == "" or line.isspace():
-            return  # Skip empty or whitespace-only lines
+            return  
         
-        # Try parsing the line as a single integer
         try:
-            # Strip extra spaces/tabs and attempt to convert to integer
             num = int(line)
             if not (-1023 <= num <= 1023):
-                return  # Ignore numbers outside valid range
-            index = num + 1023  # Shift index to match 0 to 2046
+                return  
+            index = num + 1023 
             if not self.seen[index]:
                 self.seen[index] = True
                 self.unique_integers.append(num)
         except ValueError:
-            return  # Skip non-integer or invalid lines
+            return  
     
     def sort_unique_integers(self):
         # Implement bubble sort (or any simple sort) manually
