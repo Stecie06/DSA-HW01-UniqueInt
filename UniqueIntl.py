@@ -26,12 +26,10 @@ class UniqueInt:
             return  
     
     def sort_uniqueIntegers(self):
-        # Implement bubble sort (or any simple sort) manually
         n = len(self.unique_integers)
         for i in range(n - 1):
             for j in range(n - 1 - i):
                 if self.unique_integers[j] > self.unique_integers[j + 1]:
-                    # Swap elements if out of order
                     self.unique_integers[j], self.unique_integers[j + 1] = self.unique_integers[j + 1], self.unique_integers[j]
 
     def write_output(self, output_file_path):
@@ -39,8 +37,6 @@ class UniqueInt:
             for num in self.unique_integers:
                 file.write(f"{num}\n")
 
-
-# Example Usage
 unique_int = UniqueInt()
 input_file = '/dsa/hw01/sample_inputs/sample_input_02.txt'
 output_file = '/dsa/hw01/sample_results/sample_input_02.txt_results.txt'
