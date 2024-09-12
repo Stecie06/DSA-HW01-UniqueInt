@@ -7,7 +7,7 @@ class UniqueInt:
         with open(input_file_path, 'r') as file:
             for line in file:
                 self.check_line(line.strip())
-        self.sort_unique_integers()
+        self.sort_uniqueIntegers()
         self.write_output(output_file_path)
 
     def check_line(self, line):
@@ -25,7 +25,7 @@ class UniqueInt:
         except ValueError:
             return  
     
-    def sort_unique_integers(self):
+    def sort_uniqueIntegers(self):
         # Implement bubble sort (or any simple sort) manually
         n = len(self.unique_integers)
         for i in range(n - 1):
