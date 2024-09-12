@@ -3,7 +3,7 @@ class UniqueInt:
         self.seen = [False] * 2047  
         self.unique_integers = []
 
-    def process_file(self, input_file_path, output_file_path):
+    def observe_file(self, input_file_path, output_file_path):
         with open(input_file_path, 'r') as file:
             for line in file:
                 self.process_line(line.strip())
@@ -46,4 +46,4 @@ class UniqueInt:
 unique_int = UniqueInt()
 input_file = '/dsa/hw01/sample_inputs/sample_input_02.txt'
 output_file = '/dsa/hw01/sample_results/sample_input_02.txt_results.txt'
-unique_int.process_file(input_file, output_file)
+unique_int.observe_file(input_file, output_file)
