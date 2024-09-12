@@ -1,6 +1,6 @@
 class UniqueInt:
     def __init__(self):
-        self.seen = [False] * 2047  # Size 2047 to accommodate -1023 to 1023 range
+        self.seen = [False] * 2047  
         self.unique_integers = []
 
     def process_file(self, input_file_path, output_file_path):
