@@ -6,11 +6,11 @@ class UniqueInt:
     def observe_file(self, input_file_path, output_file_path):
         with open(input_file_path, 'r') as file:
             for line in file:
-                self.process_line(line.strip())
+                self.check_line(line.strip())
         self.sort_unique_integers()
         self.write_output(output_file_path)
 
-    def process_line(self, line):
+    def check_line(self, line):
         if line == "" or line.isspace():
             return  # Skip empty or whitespace-only lines
         
