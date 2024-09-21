@@ -38,6 +38,6 @@ class UniqueInt:
                 file.write(f"{num}\n")
 
 unique_int = UniqueInt()
-input_file = '/dsa/hw01/sample_inputs/sample_input_02.txt'
-output_file = '/dsa/hw01/sample_results/sample_input_02.txt_results.txt'
+input_file = 'C:\\users\\lenovo\\Documents\\DSA-HW01-UniqueInt\\sample_inputs\\sample_input_02.txt'
+output_file = 'C:\\users\\lenovo\\Documents\\DSA-HW01-UniqueInt\\sample_results\\sample_input_02.txt_results.txt'
 unique_int.observe_file(input_file, output_file)
