@@ -2,7 +2,7 @@ const fs = require('fs');
 
 class UniqueInteger {
     constructor() {
-        this.seen = new Array(2047).fill(false); // Boolean array to track seen integers
+        this.seen = new Array(2047).fill(false); 
         this.uniqueIntegers = [];
     }
 
